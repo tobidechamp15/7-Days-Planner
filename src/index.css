@@ -1,3 +1,90 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+a {
+  text-decoration: none !important;
+}
+
+.bgColorGradToRight {
+  background:
+    linear-gradient(
+      to right,
+      rgba(4, 110, 207, 1),
+      rgba(0, 78, 150, 1)
+    );
+}
+
+.bgColorGrad {
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(4, 110, 207, 1),
+      rgba(0, 78, 150, 1)
+    );
+}
+
+.active-tab {
+  color: var(--Color-White, var(--white, #fff));
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  background: #e4dfdf49;
+  line-height: normal;
+  border: 1px white solid;
+  border-radius: 4px;
+}
+
+.sideBar-tabs {
+  display: flex;
+  font-size: 16px;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  text-align: center;
+  line-height: 20px;
+  gap: 10px;
+  padding: 12px 16px;
+  margin: 2px;
+}
+
+.sideBar-tabs:hover {
+  border: 1px white solid;
+}
+
+.inActive-tabs {
+  color: black;
+}
+
+a svg {
+  font-size: 30px;
+}
+
+.dropdown-transition {
+  transition-property: max-height, opacity;
+  transition-duration: 0.5s; /* Adjust the duration as needed */
+  transition-timing-function: ease-in-out;
+  max-height: 0;
+  opacity: 0;
+}
+
+/* Apply transition when the dropdown is open */
+.dropdown-open {
+  transition-duration: 0.5s; /* Adjust the duration as needed */
+  transition-timing-function: ease-in-out;
+
+  /* background-color: #0000a2; */
+  opacity: 1;
+}
+
+.dropdown-open a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 10px;
+  transition: background-color 0.3s;
+}
+
+.rotate {
+  transform: rotate(90deg);
+}

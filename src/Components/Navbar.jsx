@@ -12,7 +12,7 @@ const Navbar = () => {
         <img src={searchIcon} className="hidden md:flex" />
         <img src={notificationIcon} className="hidden md:flex" />
         <div className="flex gap-2 items-center justify-center ">
-          <span className="text-white border rounded-[18px] p-2 hidden md:block">
+          <span className="text-white border rounded-[18px] p-2 hidden md:block text-[12px]">
             Oluwaseun
           </span>
           <img src={userAvatar} alt="" />
